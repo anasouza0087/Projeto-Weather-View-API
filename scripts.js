@@ -2,6 +2,7 @@ const greets = document.getElementById("greets")
 const currentDate = new Date();
 const hours = currentDate.getHours();
 
+
 let showHours = hours => {
     if (hours >= 5 || hours < 12) {
         return greets.innerText = "Bom Dia!"
@@ -17,7 +18,7 @@ let showHours = hours => {
 
 let showDate = () => {
     let CompleteDate = new Date()
-    let month = CompleteDate.getDay()
+    let month = (CompleteDate.getMonth() + 1)
     let day = CompleteDate.getDate()
     document.getElementById("currentDay").innerHTML = `${day} / ${month}`
 }
@@ -27,6 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
     showDate()
 })
 
-/*fetch('https://api.hgbrasil.com/weather?format=json-cors&key=a1db9024&city_name=Osasco,SP')
+/*fetch('https://api.hgbrasil.com/weather?format=json-cors&key=a1db9024&user_ip=remote')
     .then(res => res.json())
     .then(data => console.log(data))*/

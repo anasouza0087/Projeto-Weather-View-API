@@ -5,22 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather View</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h2 id="greets">Olá, Bom dia/Boa tarde/Boa noite!</h2>
+        <h2 id="greets"></h2>
     </header>
-    <div>
-        <h3>Today in **City**</h3>
+    <div class="city-info">
+        <h3>Today in **City** </h3>
         <h4 id="currentDay">**Data_atual**</h4>
         <h1>Temperatura atual</h1>
     </div>
     <div>
+        <p>Previsão da Semana</p>
         <ul>
-            <li>Link - Today</li>
-            <li>Link - Next days</li>
+            <li class="week-days">Domingo<br>Data: xxx <br> Min: xxx <br> Máx: xxx <br> Clima: xxx <br> Previsão: xxx</li>
+            <li class="week-days">Segunda-Feira <br> Data: xxx <br> Min: xxx <br> Máx: xxx <br> Clima: xxx <br> Previsão: xxx</li>
+            <li class="week-days">Terça-Feira <br> Data: xxx <br> Min: xxx <br> Máx: xxx <br> Clima: xxx <br> Previsão: xxx</li>
+            <li class="week-days">Quarta-Feira <br> Data: xxx <br> Min: xxx <br> Máx: xxx <br> Clima: xxx <br> Previsão: xxx</li>
+            <li class="week-days">Quinta-Feira <br> Data: xxx <br> Min: xxx <br> Máx: xxx <br> Clima: xxx <br> Previsão: xxx</li>
+            <li class="week-days">Sexta-Feira <br> Data: xxx <br> Min: xxx <br> Máx: xxx <br> Clima: xxx <br> Previsão: xxx</li>
+            <li class="week-days">Sábado <br> Data: xxx <br> Min: xxx <br> Máx: xxx <br> Clima: xxx <br> Previsão: xxx</li>
+
         </ul>
     </div>
     <script src="scripts.js"></script>

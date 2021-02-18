@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.week-days {
+    display: inline-flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+.city-info {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.currently-day {
+    width: fit-content;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    padding: 8px;
+    margin-top: 20px;
+}
