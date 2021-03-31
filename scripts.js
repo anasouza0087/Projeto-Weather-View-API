@@ -1,17 +1,20 @@
 const greets = document.getElementById("greets")
+
 const currentDate = new Date();
 const hours = currentDate.getHours();
+const minutes = currentDate.getMinutes();
 
+const time = document.getElementById("time").innerHTML = `${hours}h${minutes}`
 
 let showHours = hours => {
-    if (hours >= 5 || hours < 12) {
+    if (hours >= 5 && hours < 12) {
         return greets.innerText = "Bom Dia!"
 
-    } else if (hours >= 12 || hours < 18) {
-        return greets.innerText = "Boa Tarde!"
+    } else if (hours >= 12 && hours < 18) {
+        return greets.innerText = "Boa tarde!"
 
     } else {
-        return greets.innerText = "Boa Noite!"
+        return greets.innerText = "Boa noite!"
 
     }
 }
@@ -28,6 +31,12 @@ document.addEventListener('DOMContentLoaded', function() {
     showDate()
 })
 
-/*fetch('https://api.hgbrasil.com/weather?format=json-cors&key=a1db9024&user_ip=remote')
+fetch('https://api.hgbrasil.com/weather?format=json-cors&key=a1db9024&user_ip=remote')
     .then(res => res.json())
-    .then(data => console.log(data))*/
+    .then(data => {
+        console.log(data)
+        document.getElementById("city").innerHTML = data.results.city_name
+        document.getElementById("temp").innerHTML = `${data.results.temp}º <br> ${data.results.description}`
+    })
+    /*let dados = JSON.parse(data)
+    console.log(dados.city_name)*/
