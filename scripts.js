@@ -36,7 +36,15 @@ fetch('https://api.hgbrasil.com/weather?format=json-cors&key=a1db9024&user_ip=re
     .then(data => {
         console.log(data)
         document.getElementById("city").innerHTML = data.results.city_name
-        document.getElementById("temp").innerHTML = `${data.results.temp}º <br> ${data.results.description}`
+        document.getElementById("temp").innerHTML = `${data.results.temp}°C <br> ${data.results.description}`
+        console.log("elementos:")
+        data.results.forecast.forEach(element => {
+            let previsao =
+                `${element.weekday} <br> 
+            Dia: ${element.date} <br>
+            Máxima: ${element.max}°C <br>
+            Minima: ${element.min}°C <br>
+            Tempo: ${element.description}`
+            console.log(previsao)
+        })
     })
-    /*let dados = JSON.parse(data)
-    console.log(dados.city_name)*/
