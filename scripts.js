@@ -26,7 +26,7 @@ let showDate = () => {
     document.getElementById("currentDay").innerHTML = `${day} / ${month}`
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     showHours()
     showDate()
 })
@@ -36,15 +36,24 @@ fetch('https://api.hgbrasil.com/weather?format=json-cors&key=a1db9024&user_ip=re
     .then(data => {
         console.log(data)
         document.getElementById("city").innerHTML = data.results.city_name
-        document.getElementById("temp").innerHTML = `${data.results.temp}°C <br> ${data.results.description}`
-        console.log("elementos:")
+        document.getElementById("temp").innerHTML = `${data.results.temp}°C <br> 
+        ${data.results.description}`
         data.results.forecast.forEach(element => {
-            let previsao =
-                `${element.weekday} <br> 
-            Dia: ${element.date} <br>
-            Máxima: ${element.max}°C <br>
-            Minima: ${element.min}°C <br>
-            Tempo: ${element.description}`
-            console.log(previsao)
+
+            let previsao = [
+                `${element.weekday}
+                Dia: ${element.date}
+                Máxima: ${element.max} °C
+                Minima: ${element.min} °C
+                Tempo: ${element.description}`
+            ]
+
+            let items = document.getElementById("week-forecast")
+            for (var i = 0; i < previsao.length; i++) {
+
+                let newItem = document.createElement('li')
+                newItem.appendChild(document.createTextNode(previsao[i]))
+                items.appendChild(newItem)
+            }
         })
     })
