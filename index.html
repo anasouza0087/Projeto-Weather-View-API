@@ -10,20 +10,22 @@
 </head>
 
 <body>
-    <header>
-        <h2 id="greets"></h2>
-        <h3 id="time"></h3>
+    <header class="topo">
+        <ul>
+            <li id="greets"></li>
+            <br>
+            <li id="currentDay"></li>
+            <li id="time"></li>
+        </ul>
     </header>
     <div class="city-info">
-        <h3 id="city">Today in **City** </h3>
-        <h4 id="currentDay"></h4>
-        <h1 id="temp"></h1>
+        <h1 id="city"></h1>
+        <h2 id="temp"></h2>
+        <h2 id="city-description"></h2>
     </div>
-    <div>
+    <div class="week">
         <p>Previsão da Semana</p>
-        <div>
-            <ul id="week-forecast"></ul>
-        </div>
+        <ul id="week-forecast"></ul>
     </div>
     <script src="scripts.js"></script>
 </body>

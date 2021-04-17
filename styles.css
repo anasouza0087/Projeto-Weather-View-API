@@ -1,31 +1,26 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #273d4a;
+    color: #F6F6F8;
 }
-
-.week-days {
+li {
+    list-style: none;
+}
+.topo {
+    display: inline-flex;
+    font-size: 22px;
+}
+.city-info {
+    text-align: center;
+}
+.week li {
+    border:#375668;
+    color: #F6F6F8;
+    background-color: #375668;
+    border-style: solid;
+    width: 140px;
+    height: 90px;
     display: inline-flex;
     flex-wrap: wrap;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
-    padding: 8px;
-    margin-top: 20px;
-}
-
-.city-info {
-    margin: 0 auto;
-    width: fit-content;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.currently-day {
-    width: fit-content;
-    margin: 0 auto;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
-    padding: 8px;
-    margin-top: 20px;
+    padding: 12px;
+    margin: 20px;
 }
