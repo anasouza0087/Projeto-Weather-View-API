@@ -49,7 +49,7 @@ fetch('https://api.hgbrasil.com/weather?format=json-cors&key=a1db9024&user_ip=re
             ]
 
             let items = document.getElementById("week-forecast")
-            for (var i = 0; i < previsao.length; i++) {
+            for (var i = 0;i < previsao.length;i++) {
 
                 let newItem = document.createElement('li')
                 newItem.appendChild(document.createTextNode(previsao[i]))
