@@ -9,26 +9,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <!-- inicio do corpo-->
+
 <body>
-    <header class="topo">
-        <ul>
-            <li id="greets"></li>
-            <br>
-            <li id="currentDay"></li>
-            <li id="time"></li>
-        </ul>
-    </header>
-    <div class="city-info">
-        <i class="fas fa-globe-americas"></i>
-        <h1 id="city"></h1>
-        <h2 id="temp"></h2>
-        <h2 id="city-description"></h2>
+    <div class="container-bd">
+        <header class="topo">
+            <ul>
+                <li id="greets"></li>
+                <br>
+                <li id="currentDay"></li>
+                <li id="time"></li>
+            </ul>
+        <div class="city-info">
+            <h1 id="city"></h1>
+            <h2 id="temp"></h2>
+            <h2 id="city-description"></h2>
+        </div>
+        </header>
+        <div class="week">
+            <p>Previsão da Semana</p>
+            <ul id="week-forecast"></ul>
+        </div>
+        <script src="scripts.js"></script>
     </div>
-    <div class="week">
-        <p>Previsão da Semana</p>
-        <ul id="week-forecast"></ul>
-    </div>
-    <script src="scripts.js"></script>
 </body>
 
 </html>

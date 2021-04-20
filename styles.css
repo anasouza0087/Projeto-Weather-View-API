@@ -6,6 +6,20 @@ body {
     color: #F6F6F8;
     font-family: 'Roboto', sans-serif;
 }
+.container-bd{
+    width: 1200px;
+    height: 640px;
+    border-color: red;
+    border-style: solid;
+    border:#35356e;
+    background-color: #35356e;
+    -webkit-box-shadow: 0px 2px 15px 0px #000000;
+    box-shadow: 0px 2px 15px 0px #000000;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 14px;
+    
+}
 li {
     list-style: none;
 }
@@ -14,20 +28,26 @@ li {
     font-size: 22px;
 }
 .city-info {
+    padding-left: 300px;
     text-align: center;
+    
+}
+.week{
+    width: 800px;
+    margin: 0 auto;
 }
 .week li {
     border:#35356e;
     color: #F6F6F8;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    background-color: #35356e;
+    font-size: 16px;
+    background-color: #3c3c7c;
     border-style: solid;
     width: 173px;
-    height: 140px;
+    height: 90px;
     display: inline-flex;
     flex-wrap: wrap;
-    padding: 12px;
+    padding: 14px;
     margin: 20px;
     -webkit-box-shadow: 0px 2px 15px 0px #000000;
     box-shadow: 0px 2px 15px 0px #000000;
