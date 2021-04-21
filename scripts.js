@@ -41,10 +41,10 @@ fetch('https://api.hgbrasil.com/weather?format=json-cors&key=a1db9024&user_ip=re
         data.results.forecast.forEach(element => {
 
             let previsao = [
-                `${element.weekday}
-                Dia: ${element.date}
-                Máxima: ${element.max}°C
-                Minima: ${element.min}°C
+                `${element.weekday} -------------->
+                ${element.date}
+                Máx: ${element.max}°C /
+                Min: ${element.min}°C
                 Tempo: ${element.description}`
             ]
 
