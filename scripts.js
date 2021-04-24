@@ -30,16 +30,19 @@ fetch('https://api.hgbrasil.com/weather?format=json-cors&key=a1db9024&user_ip=re
         switch (data.results.currently) {
             case ('dia'):
                 document.getElementById('greets').innerText = 'Bom Dia'
-                document.getElementById('time').style.backgroundImage = "url('./img/sun.png')"
+                document.getElementById('time').style.backgroundImage = "url('./img/sun')"
+                document.getElementById('corpo').style.backgroundColor = '#FF6105'
                 break
             case ('noite'):
                 document.getElementById('greets').innerText = 'Boa Noite'
-                document.getElementById('container-bd').style.backgroundImage = "url('./img/sun')"
+                document.getElementById('container-bd').style.backgroundImage = "url('./img/moon.png')"
+                document.getElementById('corpo').style.backgroundColor = '#282853'
+                document.getElementById('corpo').style.color = '#ffffff'
                 
                 break
             default:
                 document.getElementById('greets').innerText = 'Boa Tarde'
-                //document.getElementById('time').style.backgroundImage
+            //document.getElementById('time').style.backgroundImage
         }
 
         data.results.forecast.forEach(element => {
