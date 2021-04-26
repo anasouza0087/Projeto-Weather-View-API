@@ -28,7 +28,7 @@ li {
     font-size: 22px;
 }
 .city-info {
-    padding-left: 700px;
+    padding-left: 820px;
     text-align: right;
     
 }
@@ -37,11 +37,13 @@ li {
     padding-left: 400px;
 }
 .week li {
-    border:#FFBD45;
+    border: #101018;
     color: #101018;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background-color: #FFBD45;
+    font-style:initial;
+    font-weight: bold;
+    background-color: #ffffff;
     border-style: solid;
     width: 173px;
     height: 90px;

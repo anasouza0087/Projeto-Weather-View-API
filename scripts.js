@@ -32,6 +32,12 @@ fetch('https://api.hgbrasil.com/weather?format=json-cors&key=a1db9024&user_ip=re
                 document.getElementById('greets').innerText = 'Bom Dia'
                 document.getElementById('time').style.backgroundImage = "url('./img/sun')"
                 document.getElementById('corpo').style.backgroundColor = '#FF6105'
+                document.getElementById('greets').style.color = '#101018'
+                document.getElementById('currentDay').style.color = '#101018'
+                document.getElementById('time').style.color = '#101018'
+                document.getElementById('city').style.color = '#101018'
+                document.getElementById('temp').style.color = '#101018'
+                document.getElementById('city-description').style.color = '#101018'
                 break
             case ('noite'):
                 document.getElementById('greets').innerText = 'Boa Noite'
