@@ -9,10 +9,10 @@
 #container-bd{
     width: 1200px;
     height: 640px;
+    opacity: 0.7;
     border-color: red;
     border-style: solid;
     border:#35356e;
-    /*background-image: url('./img/moon.png');*/
     -webkit-box-shadow: 0px 2px 15px 0px #000000;
     box-shadow: 0px 2px 15px 0px #000000;
     margin: 0 auto;
@@ -28,9 +28,12 @@ li {
     font-size: 22px;
 }
 .city-info {
-    padding-left: 820px;
+    padding-left: 790px;
+    display:block;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     text-align: right;
-    
 }
 .week{
     width: 800px;
@@ -38,7 +41,9 @@ li {
 }
 .week li {
     border: #101018;
+    border-radius: 8px;
     color: #101018;
+    opacity: 0.8;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-style:initial;
